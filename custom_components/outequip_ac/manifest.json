@@ -1,0 +1,18 @@
+{
+  "domain": "outequip_ac",
+  "name": "OutEquip Pro AC",
+  "codeowners": ["@pradeepk188"],
+  "bluetooth": [
+    {
+      "local_name": "KT2026*"
+    }
+  ],
+  "config_flow": true,
+  "dependencies": ["bluetooth_adapters"],
+  "documentation": "https://github.com/pradeepk188/OutEquipProHA",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/pradeepk188/OutEquipProHA/issues",
+  "requirements": ["bleak-retry-connector>=3.4.0"],
+  "version": "0.1.0"
+}

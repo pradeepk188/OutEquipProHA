@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Select the AC",
+        "description": "Devices advertising a name starting with \"KT2026\" are shown as probable OutEquip Pro AC units. Pick one, or enter a MAC address manually if yours isn't listed.",
+        "data": {
+          "mac": "AC"
+        }
+      },
+      "manual": {
+        "title": "Enter the AC's BLE MAC address",
+        "description": "No candidates were found nearby, or you chose manual entry. The MAC is printed on/near the AC's control module, or can be found with a BLE scanner app.",
+        "data": {
+          "mac": "BLE MAC address",
+          "name": "Name (optional)"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Add this AC?",
+        "description": "Home Assistant found a probable OutEquip Pro AC: {name}. Add it?"
+      }
+    },
+    "error": {
+      "invalid_mac": "Not a valid MAC address (expected format AA:BB:CC:DD:EE:FF)"
+    },
+    "abort": {
+      "already_configured": "This AC is already configured"
+    }
+  },
+  "entity": {
+    "button": {
+      "connect": { "name": "Connect" },
+      "disconnect": { "name": "Disconnect" }
+    },
+    "switch": {
+      "power": { "name": "Power" },
+      "swing": { "name": "Swing" }
+    },
+    "select": {
+      "mode": { "name": "Mode" }
+    },
+    "number": {
+      "fan_speed": { "name": "Fan speed" },
+      "setpoint": { "name": "Setpoint temperature" }
+    },
+    "sensor": {
+      "connection_state": { "name": "Connection state" },
+      "intake_temperature": { "name": "Intake temperature" },
+      "outlet_temperature": { "name": "Outlet temperature" },
+      "supply_voltage": { "name": "Supply voltage" }
+    }
+  }
+}
